@@ -17,3 +17,5 @@ logging:
     ROOT: DEBUG
     com.netflix.eureka: OFF
     com.netflix.discovery: OFF
+test:
+  adad: ada
