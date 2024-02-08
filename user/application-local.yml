@@ -18,12 +18,6 @@ spring:
         jdbc.batch_size: 50
         order_inserts: true
         order_updates: true
-  datasource:
-    url: jdbc:postgresql://localhost:5432/eintrusty
-    username: ropandi
-    password: roP123.
-    driver-class-name: org.postgresql.Driver
-    platform: postgres
 
 
 eureka:
