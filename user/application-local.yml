@@ -18,7 +18,12 @@ spring:
         jdbc.batch_size: 50
         order_inserts: true
         order_updates: true
-
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eintrusty
+    username: {cipher}60a997a4e6c7c5dac85a8a925104c62622a36ba250ef8510bf3ead7cebe2203d
+    password: {cipher}8ce37870ce80c2b6d83f5dc80dd3b47198df2c141f8c86476deab1ab06cc4060
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
 
 eureka:
   client:
