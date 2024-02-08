@@ -1,0 +1,35 @@
+server:
+  port: 18000
+  servlet:
+    context-path: /internalsystem
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+  jpa:
+    open-in-view: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        use_sql_comments: false
+        format_sql: true
+        jdbc.batch_size: 50
+        order_inserts: true
+        order_updates: true
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/eintrusty'
+    username: '{cipher}60a997a4e6c7c5dac85a8a925104c62622a36ba250ef8510bf3ead7cebe2203d'
+    password: '{cipher}8ce37870ce80c2b6d83f5dc80dd3b47198df2c141f8c86476deab1ab06cc4060'
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+
+eureka:
+  client:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
