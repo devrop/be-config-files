@@ -1,7 +1,7 @@
 server:
   port: 18000
   servlet:
-    context-path: /internalsystem
+    context-path: /intsystem
 spring:
   cloud:
     loadbalancer:
