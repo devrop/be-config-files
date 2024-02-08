@@ -1,14 +1,21 @@
 server:
   port: 8761
 
+spring:
+  application:
+    name: eureka-discovery-service
+
 eureka:
-  instance:
-    hostname: localhost
-    health-check-url-path: /actuator/health
-    status-page-url-path: /actuator/info
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    appname: service-registry-cluster
+
 logging:
   level:
-    org.springframework.cloud: 'DEBUG'
+    ROOT: DEBUG
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
+test:
+  adad: ada
