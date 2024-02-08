@@ -15,12 +15,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
-  datasource:
-    url: jdbc:postgresql://localhost:5432/eintrusty
-    username: ropandi
-    password: roP123.
-    driver-class-name: org.postgresql.Driver
-    platform: postgres
 
 
 eureka:
